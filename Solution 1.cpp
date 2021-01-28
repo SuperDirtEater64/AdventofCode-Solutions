@@ -12,21 +12,24 @@ int main()
         //Sol is the solution to the problem, found by multiplying the two correct numbers.
         int Sol = 0;
 
-        
-        std::ifstream is("input.txt");        
+        //reading from the text file to input stream
+        std::ifstream is("input.txt");  
+        std::string line;     
 
         //Let's start iterating through the list
-        for (std::string line; getline(is, line);)
+        if (is.is_open())
         {
-            A = stoi (line);
+            for (line; getline(is, line);)
+            {
+                A = stoi (line);
                 
 
-            for (line; getline(is, line);)
+                for (line; getline(is, line);)
                 {
                     B = stoi(line);
                     Sol = A * B;
 
-                    if (A * B == 2020)
+                    if (A + B == 2020)
                     {
                         //answer
                         {
@@ -34,5 +37,6 @@ int main()
                         }
                     }
                 }
-        }  
+            }    
+        }
     }
