@@ -29,7 +29,7 @@ int main()
                     B = stoi(line);
                     Sol = A * B;
 
-                    if (A + B == 2020)
+                    if (A + B == 2020 && A != B)
                     {
                         //answer
                         {
