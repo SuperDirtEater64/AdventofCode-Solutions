@@ -1,10 +1,9 @@
 #include <iostream>
 #include <fstream>
-#include <stdlib.h>
 #include <string>
 
 int main()
-    {
+{
         //A and B are the variables for temporarily holding the values of the numbers to be checked.
         int A = 0;
         int B = 0;
@@ -32,11 +31,15 @@ int main()
                     if (A + B == 2020 && A != B)
                     {
                         //answer
-                        {
-                            std::cout << "The two numbers are " << A << " and " << B << " and their product is " << Sol << "/n";
-                        }
+                        std::cout << "The two numbers are " << A << " and " << B << " and their product is " << Sol << "/n";
+                        break;                       
                     }
+                }
+
+                if (A + B == 2020)
+                {
+                    break;
                 }
             }    
         }
-    }
+}
