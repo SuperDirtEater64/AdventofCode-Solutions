@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#using namespace std;
 
 int main()
 {
@@ -12,8 +13,8 @@ int main()
         int Sol = 0;
 
         //reading from the text file to input stream
-        std::ifstream is("input.txt");  
-        std::string line;     
+        ifstream is("input.txt");  
+        string line;     
 
         //Let's start iterating through the list
         if (is.is_open())
@@ -31,7 +32,7 @@ int main()
                     if (A + B == 2020 && A != B)
                     {
                         //answer
-                        std::cout << "The two numbers are " << A << " and " << B << " and their product is " << Sol << "/n";
+                        cout << "The two numbers are " << A << " and " << B << " and their product is " << Sol << "/n";
                         break;                       
                     }
                 }
