@@ -55,6 +55,7 @@ int main()
                     {
                         //answer
                         cout << "The two numbers are " << A << " and " << B << " and their product is " << Sol << "\n";
+                        cin.ignore();
                         break;                       
                     }
                 }
